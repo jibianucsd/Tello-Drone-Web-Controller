@@ -4,6 +4,6 @@
 <img src="controllmode.png" width=40% height=40%>
 
 ## Plan Mode
-<img src="controllmode.png" width=40% height=40%>
+<img src="planmode.png" width=40% height=40%>
 
 Example video: https://youtu.be/ggMCw6OKZ0o
