@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <title>ECE 140A Lab 5</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="yi.css">
+        <script src="dada.js"></script>
+    </head>
+    <script>
+        function changemode(){
+            var elem = document.getElementById("modebtn");
+            if (elem.value=="Control Mode"){
+                elem.value = "Plan Mode";
+                document.getElementById('pmode').className="show";
+                document.getElementById('cmode').className="hide";
+            }
+            else{
+                elem.value = "Control Mode";
+                document.getElementById('pmode').className="hide";
+                document.getElementById('cmode').className="show";
+            }
+        }
+    </script>
+    <body>
+        <h1>
+            <a style="color: rgb(248, 214, 103);">Tello</a> Controller
+        </h1>
+        <div class="mode">
+            <input id="modebtn" type="button" value="Control Mode" class="btn" onclick="changemode()">
+            <br><br>
+            <form class="hide" id="pmode" action="">
+                <textarea id="txt" placeholder="Example input:
+takeoff
+up_90
+land
+Note! use '_' for magnitude argument."></textarea>
+                <br><br>
+                <input type="submit" value="Send Plans" id="txtbtn"/>
+            </form>
+        </div>
+        <br>
+        <div class="show" id="cmode">
+            <div class="mag">
+                <input placeholder="Enter Number" type="number" id="mag">
+            </div>
+            <br><br>
+            <div class="tl">
+                <div class="cmd1">
+                    <form id="cmd1" action="">
+                        <input class="btn" value="Fly" type="submit" id="takeoff">
+                    </form>
+                </div>
+                <div class="cmd8">
+                    <form id="cmd8" action="">
+                        <input class="btn" value="Land" type="submit" id="land">
+                    </form>
+                </div>
+            </div>
+            <div class="ud">
+                <div class="cmd2">
+                    <form id="cmd2" action="">
+                        <input class="btn" value="Up" type="submit" id="up">
+                    </form>
+                </div>
+                <div class="cmd7">
+                    <form id="cmd7" action="">
+                        <input class="btn" value="Down" type="submit" id="down">
+                    </form>
+                </div>
+            </div>
+            <div class="fb">
+                <div class="cmd3">
+                    <form id="cmd3" action="">
+                        <input class="btn" value="Forward" type="submit" id="forward">
+                    </form>
+                </div>
+                <div class="cmd6">
+                    <form id="cmd6" action="">
+                        <input class="btn" value="Back" type="submit" id="back">
+                    </form>
+                </div>
+            </div>
+            <div class="cc">
+                <div class="cmd4">
+                    <form id="cmd4" action="">
+                        <input class="btn" value="CCW" type="submit" id="ccw">
+                    </form>
+                </div>
+                <div class="cmd5">
+                    <form id="cmd5" action="">
+                        <input class="btn" value="CW" type="submit" id="cw">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="teledata" id="teledata">
+            <div class="agx">agx</div>
+            <div class="agy">agy</div>
+            <div class="agz">agz</div>
+            <div class="baro">baro</div>
+            <div class="bat">bat</div>
+            <div class="h">h</div>
+            <div class="pitch">pitch</div>
+            <div class="roll">roll</div>
+            <div class="temph">temph</div>
+            <div class="templ">templ</div>
+            <div class="time">time</div>
+            <div class="tof">tof</div>
+            <div class="vgx">vgx</div>
+            <div class="vgy">vgy</div>
+            <div class="vgz">vgz</div>
+            <div class="yaw">yaw</div>
+
+            <div style="color: aliceblue;" id="agx"></div>
+            <div style="color: aliceblue;" id="agy"></div>
+            <div style="color: aliceblue;" id="agz"></div>
+            <div style="color: aliceblue;" id="baro"></div>
+            <div style="color: aliceblue;" id="bat"></div>
+            <div style="color: aliceblue;" id="h"></div>
+            <div style="color: aliceblue;" id="pitch"></div>
+            <div style="color: aliceblue;" id="roll"></div>
+            <div style="color: aliceblue;" id="temph"></div>
+            <div style="color: aliceblue;" id="templ"></div>
+            <div style="color: aliceblue;" id="time"></div>
+            <div style="color: aliceblue;" id="tof"></div>
+            <div style="color: aliceblue;" id="vgx"></div>
+            <div style="color: aliceblue;" id="vgy"></div>
+            <div style="color: aliceblue;" id="vgz"></div>
+            <div style="color: aliceblue;" id="yaw"></div>
+        </div>
+    </body>
+</html>

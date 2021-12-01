@@ -1,0 +1,132 @@
+html, body{
+    background-color: rgb(27, 27, 33);
+    color: rgb(206, 204, 204);
+    font-family: 'Courier New', monospace;
+}
+.btn{
+    font-family: 'Courier New', monospace;
+    border-radius: 5px;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: rgb(27 27 33); 
+    color: rgb(206, 204, 204); 
+    border: 2px solid #6da0a9;
+    box-sizing: border-box;
+    width: 120px;
+}
+#takeoff{
+    border: 2px solid #bb4040;
+}
+#takeoff:hover{
+    background-color: #bb4040;
+}
+#land{
+    border: 2px solid #bfc0c0;
+}
+#land:hover{
+    color: rgb(82, 81, 81);
+    background-color: #bfc0c0;
+}
+.btn:hover{
+    background-color: #6da0a9;
+}
+#mag{
+    font-family: 'Courier New', monospace;
+    color: rgb(206, 204, 204);
+    border: 2px solid rgb(248, 214, 103);
+    border-radius: 4px;
+    background-color: rgb(27, 27, 33);
+    padding: 9px 15px;
+    box-sizing: border-box;
+}
+.mag{
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+h1{
+    color:  rgb(206, 204, 204);
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.ud, .fb, .cc, .tl{
+    width: 300px;
+    margin: 0 auto;
+}
+.cmd1, .cmd8, .cmd2, .cmd3, 
+.cmd4, .cmd5, .cmd6, .cmd7, #modebtn{
+    float: left;
+    padding: 10px;
+}
+.mode{
+    width: 270px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+#modebtn{
+    width:260px;
+}
+#modebtn{
+    border: 2px solid #7b218a;
+}
+#modebtn:hover{
+    background-color: #7b218a;
+}
+.hide{
+    display:none;
+}
+.show{
+    display:block;
+}
+#txt{
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgb(206, 204, 204);
+    border-radius: 6px;
+    background-color: rgb(27, 27, 33);
+    resize: none;
+    color: rgb(206, 204, 204);
+    font-family: 'Courier New', monospace;
+}
+#txtbtn{
+    font-family: 'Courier New', monospace;
+    border-radius: 5px;
+    padding: 13px 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: rgb(27 27 33); 
+    color: rgb(206, 204, 204); 
+    border: 2px solid rgb(248, 214, 103);
+    box-sizing: border-box;
+    width: 140px;
+}
+#txtbtn:hover{
+    background-color: rgb(248, 214, 103);
+}
+
+.teledata{
+    width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-gap: 3px;
+    padding: 3px;
+    grid-auto-rows: 30px;
+    color: white;
+}
